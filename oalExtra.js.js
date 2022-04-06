@@ -23,7 +23,7 @@ let myArray = [1, 2, 3, 4, 5]
 let myObject = {
     name: "Ade",
     surname: "Adeniran",
-    email: "adex.dbaba@gamil.com",
+    email: "adeba@gamil.com",
     age: 34,
 }
 //console.log(`The following is the detail of ${myObject.name};
@@ -35,7 +35,8 @@ console.log("\n(2).", myObject)
 
 /* WRITE YOUR ANSWER HERE */
 myObject.hasDriverLicense = "Yes"
-console.log("\n(3).",  myObject.hasDriverLicense)
+console.log("\n(3).", myObject.hasDriverLicense)
+
 /* EXERCISE 4
  Remove from the previously created object the age property.
 */
@@ -57,7 +58,7 @@ let myObject2 = {
 }
 console.log("\n(5). This is myObject2 email;", myObject2.email)
 
-/* EXERCISE 6
+/* EXERCISE 
  You are working on an e-commerce website. In the variable totalShoppingCart you are storing the total amount spent by the current user.
  Currently you have a promotion: if the customer's shopping cart total is more than 50, the user is eligible for free shipping (otherwise it costs 10).
  Write an algorithm that calculates the total cost to charge the user with.
@@ -83,9 +84,9 @@ for (let user = 0; users.totalAmountSpent >= totalShoppingCart; user++) {
 console.log("Because your totalAmountSpent is greater then 50, you have to pay", totalShoppingCart )*/
 
 if (totalAmountSpent >= totalShoppingCart) 
-    console.log("You have won our bonus, so you would be paying", NoNeedToPay, "amount")
+    console.log("\n You have won our bonus, so you would be paying", NoNeedToPay, "amount")
 else {
-    console.log("Your total amount is", totalAmountSpent)
+    console.log("\n Your total amount is", totalAmountSpent)
     }
 
     
@@ -96,11 +97,20 @@ else {
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+let user =  "Dele"
+let amountSpent = 60 
+let totalCost = 0.8 * amountSpent
+console.log ("\nThe discounted amount after bonus dudected is;", totalCost)
 /* EXERCISE 8
  Create a variable and assign to it an object representing a car, with properties like brand, model and licensePlate.
  Then clone it 5 times, and change the licensePlate for each cloned car without affecting the original one.
 */
+let car = {
+    brand: "Volkswagon",
+    model: "Golf",
+    licensePlate: "ABD-456",
+}
+console.log(car)
 
 /* WRITE YOUR ANSWER HERE */
 
@@ -109,7 +119,7 @@ else {
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+//let carsForRent = 
 /* EXERCISE 10
  Remove the first and the last car from the carsForRent array.
 */
