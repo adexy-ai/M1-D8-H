@@ -82,8 +82,8 @@ for (let user = 0; users.totalAmountSpent >= totalShoppingCart; user++) {
 }
 console.log("Because your totalAmountSpent is greater then 50, you have to pay", totalShoppingCart )*/
 
-if (user1.totalAmountSpent >= totalShoppingCart) 
-    console.log("You have won our bonus, so you", NoNeedToPay)
+if (totalAmountSpent >= totalShoppingCart) 
+    console.log("You have won our bonus, so you would be paying", NoNeedToPay, "amount")
 else {
     console.log("Your total amount is", totalAmountSpent)
     }
