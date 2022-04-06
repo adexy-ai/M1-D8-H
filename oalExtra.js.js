@@ -13,30 +13,49 @@ ASSIGNMENT RULES
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+let myArray = [1, 2, 3, 4, 5]
+    console.log("\n(1).", myArray)
 /* EXERCISE 2
  Create a variable and assign to it an object containing your name, surname, email address and age.
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+let myObject = {
+    name: "Ade",
+    surname: "Adeniran",
+    email: "adex.dbaba@gamil.com",
+    age: 34,
+}
+//console.log(`The following is the detail of ${myObject.name};
+//${myObject} as recorded in the myObject Array`)
+console.log("\n(2).", myObject)
 /* EXERCISE 3
  Add to the previously created object a property with a boolean value to rappresent wheter you have or not a driving license.
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+myObject.hasDriverLicense = "Yes"
+console.log("\n(3).",  myObject.hasDriverLicense)
 /* EXERCISE 4
  Remove from the previously created object the age property.
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+delete myObject.age
+//console.log(`Ade's age has been deleted from myObject: ${myObject}`)
+console.log("\n(4). myObject contain other details except age", "\n", myObject) //the line break does not work at this instance!!!
 /* EXERCISE 5
  Create a second object with another name, surname, email address and verify that this object has a different email address than the previous one.
 */
 
 /* WRITE YOUR ANSWER HERE */
+let myObject2 = {
+    name: "Jide",
+    surname: "Johnson",
+    email: "jide.johnson@yahoo.com",
+    age: 45,
+}
+console.log("\n(5). This is myObject2 email;", myObject2.email)
 
 /* EXERCISE 6
  You are working on an e-commerce website. In the variable totalShoppingCart you are storing the total amount spent by the current user.
@@ -45,7 +64,32 @@ ASSIGNMENT RULES
 */
 
 /* WRITE YOUR ANSWER HERE */
+let user1 =  "Bayo"
+let totalAmountSpent = 60 
+let totalShoppingCart = 50
+let NoNeedToPay =  0 
 
+
+   // { user2: "John", totalAmountSpent: 40},
+    //{user3: "Joe", totalAmountSpent: 110},
+    //{ user4: "Mira", totalAmountSpent: 75},
+    //{user5: "Sini", totalAmountSpent: 30},*/
+//I was trying to use for loop but it does not seem to tbe the appropriate aproach
+    // so I use if condition instead
+/*let totalShoppingCart = 50
+for (let user = 0; users.totalAmountSpent >= totalShoppingCart; user++) {
+    totalShoppingCart -=1
+}
+console.log("Because your totalAmountSpent is greater then 50, you have to pay", totalShoppingCart )*/
+
+if (user1.totalAmountSpent >= totalShoppingCart) 
+    console.log("You have won our bonus, so you", NoNeedToPay)
+else {
+    console.log("Your total amount is", totalAmountSpent)
+    }
+
+    
+    
 /* EXERCISE 7
  You are working on an e-commerce website. Today is Black Friday and everything has a 20% discount at the end of the purchase.
  Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalCost.
